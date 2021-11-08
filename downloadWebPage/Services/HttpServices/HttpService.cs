@@ -4,17 +4,12 @@ using System.Threading.Tasks;
 
 namespace downloadWebPage.Services.HttpServices
 {
-    public class HttpService : IHttpService, IDisposable
+    public class HttpService : IHttpService
 	{
         private readonly HttpClient client;
 		public HttpService()
 		{
 			client = new HttpClient();
-		}
-
-		public void Dispose()
-		{
-			client.Dispose();
 		}
 
 		public async Task<string> DownloadPage(string fullUrl)

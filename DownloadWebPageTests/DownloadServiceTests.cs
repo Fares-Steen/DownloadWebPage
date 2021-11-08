@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DownloadWebPageTests
 {
 	[TestClass]
-	public class DownloadTests
+	public class DownloadServiceTests
 	{
 
 		[TestMethod]

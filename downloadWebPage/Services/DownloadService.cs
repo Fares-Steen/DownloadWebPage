@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace downloadWebPage.Services
 {
-    public class DownloadService : IDisposable
+    public class DownloadService 
 	{
         private readonly List<string> subPaths = new List<string>();
 		private readonly object _lockObject = new object();
@@ -41,10 +41,6 @@ namespace downloadWebPage.Services
 				}
 				await Task.WhenAll(handleTasks);
 			}
-		}
-		public void Dispose()
-		{
-			httpService.Dispose();
 		}
 
 		private string GetPageName(string url)

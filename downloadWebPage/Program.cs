@@ -11,7 +11,6 @@ namespace downloadWebPage
 		{
 			DownloadService downloadService = new DownloadService("https://tretton37.com/", new HttpService(), new FileService());
 			await downloadService.HandleUrl("");
-			downloadService.Dispose();
 		}
 	}
 }
