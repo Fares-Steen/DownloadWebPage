@@ -1,5 +1,5 @@
 # DownloadWebPage
-The application will start at the home page and download the html of it and then look at any <a> elements that belong to the same website and download them as well and repeat that in a recursive way.
+The application will start at the home page and download the html of it and then look at any 'a' elements that belong to the same website and download them as well and repeat that in a recursive way.
 
 Every single page will be handled concurrently.
 
